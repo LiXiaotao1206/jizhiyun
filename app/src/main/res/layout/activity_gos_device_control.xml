@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_toolbar" />
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/background_color"
+	    android:fadingEdge="vertical"
+	    android:paddingBottom="10dp"
+	    android:paddingTop="20dp"
+	    android:scrollbars="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:scrollbars="vertical" >
+	        
+	
+			
+            <!-- 锅炉给水-PH(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="锅炉给水-PH" />
+
+					<TextView
+						android:id="@+id/tv_data_GS_PH"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 锅炉给水-CC(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="锅炉给水-CC" />
+
+					<TextView
+						android:id="@+id/tv_data_GS_CC"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 锅炉给水-O2(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="锅炉给水-O2" />
+
+					<TextView
+						android:id="@+id/tv_data_GS_O2"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 炉水-SC(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="炉水-SC" />
+
+					<TextView
+						android:id="@+id/tv_data_LS_SC"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 炉水-pH(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="炉水-pH" />
+
+					<TextView
+						android:id="@+id/tv_data_LS_pH"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 炉水-PO4(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="炉水-PO4" />
+
+					<TextView
+						android:id="@+id/tv_data_LS_PO4"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 饱和蒸汽-Na(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="饱和蒸汽-Na" />
+
+					<TextView
+						android:id="@+id/tv_data_BH_Na"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 饱和蒸汽-CC(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="饱和蒸汽-CC" />
+
+					<TextView
+						android:id="@+id/tv_data_BH_CC"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 过热蒸汽-CC(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="过热蒸汽-CC" />
+
+					<TextView
+						android:id="@+id/tv_data_GR_CC"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 过热蒸汽-Na(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="过热蒸汽-Na" />
+
+					<TextView
+						android:id="@+id/tv_data_GR_Na"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 过热蒸汽-SiO2(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="过热蒸汽-SiO2" />
+
+					<TextView
+						android:id="@+id/tv_data_GR_SiO2"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 汽机凝结水-CC(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="汽机凝结水-CC" />
+
+					<TextView
+						android:id="@+id/tv_data_QJ_CC"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- 汽机凝结水-O2(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="汽机凝结水-O2" />
+
+					<TextView
+						android:id="@+id/tv_data_QJ_O2"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+			
+            <!-- Q(数值只读) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="Q" />
+
+					<TextView
+						android:id="@+id/tv_data_Q"
+						android:layout_width="110dp"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:gravity="end"
+						android:textSize="16sp"
+						android:textColor="@color/gray" />	
+			</RelativeLayout>
+	
+		
+	    </LinearLayout>
+
+	</ScrollView>
+</LinearLayout>
